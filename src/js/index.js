@@ -41,3 +41,5 @@ function handleKeyPress(event) {
 // Event listeners
 btnSearch.addEventListener('click', handleSearch);
 inputSearch.addEventListener('keypress', handleKeyPress);
+
+
