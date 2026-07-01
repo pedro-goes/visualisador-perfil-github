@@ -26,9 +26,7 @@ export function renderProfile(container, userRepos, userData) {
         <span>💻language: ${repo.language || 'não informado'}</span>
       </div>
     </div>
-
     </a>
-
 
     `).join(``) : `<p>Nenhum repositorio encontrado.</p>`;
 
@@ -36,7 +34,7 @@ export function renderProfile(container, userRepos, userData) {
     <div class="profile-card">
       <img src="${userData.avatar_url}" alt="avatar de ${userData.name}" class="profile-avatar">
       <div class="profile-info">
-        <h2>${userData.name}</h2>
+        <h2>${userData.name || "não possui usuario cadastrado"}</h2>
         <p>${userData.bio || 'Sem biografia disponível 😢'}</p>
       </div>
     </div>
